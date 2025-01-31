@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script>document.documentElement.classList.add('js')</script>
+  </head>
+  <body>
+    <header class="flex items-center justify-between p-4 bg-slate-950 text-white sticky top-0">
+      <div class="text-x1 font-bold text-violet-200">
+        Ecaterina
+      </div>
+      <nav>
+        <button type="button"
+          class="text-violet-200 border border-violet-200 hover:bg-violet-200 hover:text-slate-950  transition delay-100 duration-300 ease-in-out focus:ring-4 focus:outline-none focus:ring-violet-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center">
+          <svg class="w-[28px] h-[28px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="1.2" d="M5 7h14M5 12h14M5 17h14" />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <div id="home" class="h-screen items-center lg:flex p-12 bg-slate-950 ">
+      <div class="lg:flex-1 md:shrink-0">
+        <img src="https://via.placeholder.com/300" alt="Ecaterina" />
+      </div>
+      <div class="lg:flex-1 delay-[300ms] text-violet-200 duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+        <h1 class="text-4xl font-bold">Hi, I'm Ecaterina</h1>
+        <p class="text-lg">I'm a software engineer based in London. I work at a company called TechSolutions. I'm passionate about building software that makes a difference.</p>
+        <a href="#">Meet me outside work</a>
+      </div>
+    </div>
+
+    <div id="resume" class="flex px-8 flex-col bg-violet-200">
+      <div id="resume title" class="flex flex-row p-4">Resume</div>
+      <div id="experience block" class=" bg-slate-600 sm:flex p-10 sm:justify-center">
+        <div id="experience title" class="bg-green-300 sm:max-w-1/3 sm:flex-1 sm:justify-items-start">
+          <h1>Experience</h1>
+        </div>
+        <div id="exp list" class="sm:flex-1 sm:max-w-1/3">
+          <div id ="exp1"class="bg-yellow-300 sm:justify-items-start">
+            <p class="py-2">MSG Systems</p>
+            <p class="text-lg">SAP ABAP developer intern</p>
+            <p class="py-2">Learned ABAP base concepts (ABAP objects, ABAP 7.4 syntax and RAP). Developed and lead an ABAP RAP team project. Worked in an Agile environment, Jira. Managed tasks & time in a team efficiently.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="projects"></div>
+    <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+  </body>
+</html>
