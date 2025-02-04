@@ -7,10 +7,10 @@
     <script>document.documentElement.classList.add('js')</script>
   </head>
   <body>
-    <header class="flex items-center justify-between p-4 bg-slate-950 text-white sticky top-0">
-      <div class="text-x1 font-bold text-violet-200">
+    <header class="flex items-center justify-between p-4 bg-slate-950 sticky top-0">
+      <p class=" text-2xl font-bold text-violet-200">
         Ecaterina
-      </div>
+      </p>
       <nav>
         <button type="button"
           class="text-violet-200 border border-violet-200 hover:bg-violet-200 hover:text-slate-950  transition delay-100 duration-300 ease-in-out focus:ring-4 focus:outline-none focus:ring-violet-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center">
@@ -34,20 +34,102 @@
     </div>
 
     <div id="resume" class="flex px-8 flex-col bg-violet-200">
-      <div id="resume title" class="flex flex-row p-4">Resume</div>
-      <div id="experience block" class=" bg-slate-600 sm:flex p-10 sm:justify-center">
-        <div id="experience title" class="bg-green-300 sm:max-w-1/3 sm:flex-1 sm:justify-items-start">
-          <h1>Experience</h1>
+      <div id="resume title" class="flex flex-row p-4 text-base ">Resume</div>
+      <div id="experience block" class="sm:flex p-10 sm:justify-center">
+        <div id="experience title" class="sm:max-w-1/4 sm:flex-1 sm:justify-items-start">
+          <h1 class="text-5xl">Experience</h1>
         </div>
-        <div id="exp list" class="sm:flex-1 sm:max-w-1/3">
-          <div id ="exp1"class="bg-yellow-300 sm:justify-items-start">
-            <p class="py-2">MSG Systems</p>
-            <p class="text-lg">SAP ABAP developer intern</p>
-            <p class="py-2">Learned ABAP base concepts (ABAP objects, ABAP 7.4 syntax and RAP). Developed and lead an ABAP RAP team project. Worked in an Agile environment, Jira. Managed tasks & time in a team efficiently.</p>
+        <div id="exp list" class="sm:flex-1 sm:max-w-1/4">
+          <div id ="exp1"class="sm:justify-items-start">
+            <p class="pb-3 text-xl text-black/75">MSG SYSTEMS</p>
+            <p class="text-2xl">SAP ABAP developer intern</p>
+            <p class="py-3 text-xl text-black/80">Learned ABAP base concepts (ABAP objects, ABAP 7.4 syntax and RAP). Developed and lead an ABAP RAP team project. Worked in an Agile environment, Jira. Managed tasks & time in a team efficiently.</p>
+          </div>
+          <hr class="h-px my-4 bg-black border-0">
+          <div id ="exp2"class="sm:justify-items-start">
+            <p class="py-3 text-xl text-black/75">ACCENTURE INDUSTRY X</p>
+            <p class="text-2xl">C# Embedded intern</p>
+            <p class="py-3 text-xl text-black/80">Code cleaning and optimization. Converted UI from Windows Forms to WPF. Used C#, OOP & UDP concepts. Built new features and logger with Apache Log4Net.</p>
           </div>
         </div>
       </div>
+
+      <div id="technical block" class="sm:flex p-10 sm:justify-center">
+        <div id="technical title" class="sm:max-w-1/4 sm:flex-1 sm:justify-items-start">
+          <h1 class="text-5xl">Technical skills</h1>
+        </div>
+        <div id="technical skills list" class="sm:flex-1 sm:max-w-1/4">
+          <div id ="backend"class="sm:justify-items-start">
+            <p class="pb-3 text-xl text-black/75">BACKEND</p>
+            <ul class="pb-3 text-xl text-black/80 list-disc list-inside">
+              <li>Hibernate, Flask, NodeJS, Koa</li>
+              <li>Java, Gradle, Maven</li>
+              <li>C / C# / C++, Pyhton</li>
+              <li>SAP ABAP, RAP</li>
+              <li>SQLite, MongoDB, Postgresql</li>
+              <li>JUnit</li>
+              <li>REST services & APIs</li>
+              <li>ORM, OOP, Data structures & algorithms</li>
+              <li>Parallel and distributed computing</li>
+            </ul>
+          </div>
+          <hr class="h-px my-4 bg-black border-0">
+          <div id ="exp2"class="sm:justify-items-start">
+            <p class="py-3 text-xl text-black/75">FRONTEND</p>
+            <ul class="pb-3 text-xl text-black/80 list-disc list-inside">
+              <li>React native</li>
+              <li>Tailwind</li>
+              <li>Javascript</li>
+              <li>Expo</li>
+              <li>Typescript</li>
+              <li>Kotlin</li>
+              <li>WPF</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="soft skills block" class="sm:flex p-10 sm:justify-center">
+        <div id="soft skills title" class="sm:max-w-1/4 sm:flex-1 sm:justify-items-start">
+          <h1 class="text-5xl">Key skills</h1>
+        </div>
+        <div id="soft skills list" class="sm:flex-1 sm:max-w-1/4">
+          <div id ="backend"class="sm:justify-items-start">
+            <ul class="pb-3 text-xl text-black/80 list-disc list-inside">
+              <li>Team spirit & leader skills</li>
+              <li>Communication skills</li>
+              <li>Adaptable & flexible</li>
+              <li>Time & tasks management</li>
+              <li>Eye for detail</li>
+              <li>JUnit</li>
+              <li>Self-motivated</li>
+              <li>Optimistic</li>
+              <li>Supportive & friendly</li>
+            </ul>
+          </div>
+      </div>
     </div>
+
+    <div id="education block" class="sm:flex p-10 sm:justify-center">
+      <div id="education title" class="sm:max-w-1/4 sm:flex-1 sm:justify-items-start">
+        <h1 class="text-5xl">Experience</h1>
+      </div>
+      <div id="exp list" class="sm:flex-1 sm:max-w-1/4">
+        <div id ="exp1"class="sm:justify-items-start">
+          <p class="pb-3 text-xl text-black/75">MSG SYSTEMS</p>
+          <p class="text-2xl">SAP ABAP developer intern</p>
+          <p class="py-3 text-xl text-black/80">Learned ABAP base concepts (ABAP objects, ABAP 7.4 syntax and RAP). Developed and lead an ABAP RAP team project. Worked in an Agile environment, Jira. Managed tasks & time in a team efficiently.</p>
+        </div>
+        <hr class="h-px my-4 bg-black border-0">
+        <div id ="exp2"class="sm:justify-items-start">
+          <p class="py-3 text-xl text-black/75">ACCENTURE INDUSTRY X</p>
+          <p class="text-2xl">C# Embedded intern</p>
+          <p class="py-3 text-xl text-black/80">Code cleaning and optimization. Converted UI from Windows Forms to WPF. Used C#, OOP & UDP concepts. Built new features and logger with Apache Log4Net.</p>
+        </div>
+      </div>
+    </div>
+
     <div id="projects"></div>
     <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
   </body>
