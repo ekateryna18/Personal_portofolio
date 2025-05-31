@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "tailwind-scrollbar-hide": "^2.0.0",
     "taos": "^1.0.5"
   }
 }
